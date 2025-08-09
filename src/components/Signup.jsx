@@ -12,7 +12,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault()
     try {
-      await axios.post('http://localhost:3000/api/auth/signup', { name, email, password })
+      await axios.post('https://ai-backend-snowy.vercel.app/api/auth/signup', { name, email, password })
       alert("Signup successful! Please login.")
       navigate('/login')
     } catch (err) {

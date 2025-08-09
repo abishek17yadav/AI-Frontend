@@ -23,7 +23,7 @@ function CodeReview() {
   async function reviewCode() {
     setLoading(true)
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+      const response = await axios.post('https://ai-backend-snowy.vercel.app/ai/get-review', { code })
       setReview(response.data)
     } catch (error) {
       console.error("Error fetching review:", error)
