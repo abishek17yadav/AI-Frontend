@@ -29,7 +29,7 @@ function Landing() {
           cursor: 'pointer',
           transition: 'background 0.3s ease'
         }}>
-          <Link to="/login" style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Login</Link>
+          {/* <Link to="/login" style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Login</Link> */}
         </button>
         <button style={{
           padding: '12px 30px',
@@ -41,7 +41,8 @@ function Landing() {
           cursor: 'pointer',
           transition: 'background 0.3s ease'
         }}>
-          <Link to="/signup" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>Signup</Link>
+          {/* <Link to="/signup" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>Signup</Link> */}
+          <Link to="/dashboard" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>Dashboard</Link>
         </button>
       </div>
     </div>

@@ -15,13 +15,13 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/signup" element={<Signup />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/dashboard" element={
-          <ProtectedRoute><Dashboard /></ProtectedRoute>
+         <Dashboard />
         } />
         <Route path="/codereview" element={
-          <ProtectedRoute><CodeReview /></ProtectedRoute>
+          <CodeReview />
         } />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
